@@ -1,20 +1,3 @@
-# Project Repository Structure and Files
-
-# 1. data_fetch.ipynb
-#    Notebook that fetches track metadata and audio features from Spotify API.
-
-# 2. EDA.ipynb
-#    Exploratory Data Analysis notebook including descriptive stats, distribution plots, correlation, and regression analysis.
-
-# 3. final_audio_features_dataset.csv
-#    Final dataset combining track metadata and audio features (2023 to present).
-
-# 4. README.md
-#    Project overview, motivation, methodology, and conclusions.
-
-
-# -------- README.md (in markdown format) --------
-
 # Spotify Song Popularity Analysis
 
 ## 🎵 Objective
