@@ -17,19 +17,16 @@ This project predicts the likelihood of Parkinson’s Disease in individuals usi
 
 ## 🗂️ Project Structure
 
-
+```bash
 parkinsons-disease-prediction/
 │
 ├── assets/                  # Brain image used in the UI (e.g., b2.png)
 ├── data/                    # Dataset (e.g., parkinsons.csv)
 ├── notebooks/               # Jupyter notebook for model training (FinalFullProject.ipynb)
 ├── src/                     # Python code for the GUI (FullUI.py)
-│
-├── .gitignore               # To ignore unnecessary files/folders
 ├── requirements.txt         # Required Python packages
 ├── README.md                # Project documentation
-
-
+```
 
 ---
 

@@ -79,6 +79,16 @@ The primary file used: `movies_metadata.csv`
 
 ---
 
+## 🗂️ Project Structure
+
+```bash
+C:.
+├───data
+├───images
+└───notebooks
+```
+---
+
 ## 📁 Project Files
 
 - `movie_analysis.ipynb` – PySpark code for transformation.

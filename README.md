@@ -46,7 +46,7 @@ A machine learning and GUI-based project to predict **Parkinson's disease** usin
 ---
 
 ## 📁 Repo Structure
-
+```bash
 Projects:.
 ├───movie-analysis-aws-tableau
 │   ├───data
@@ -58,6 +58,7 @@ Projects:.
 │   ├───notebooks
 │   └───src
 └───spotify-popularity-analysis
+```
 
 ---
 
