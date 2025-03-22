@@ -45,3 +45,39 @@ We collected data for **18,000 songs** released between **January 2023 and prese
 - `README.md` → Project overview and documentation
 
 ---
+
+## 🚀 How to Run This Project in Jupyter Notebook
+
+Follow these steps to set up and run the project locally using Jupyter Notebook.
+
+### 📥 Clone the Repository
+
+```bash
+git clone https://github.com/ManiShankar6/Projects.git
+cd projects/spotify-popularity-analysis
+
+### 🛠️ Set Up the Environment
+**a. Create a virtual environment (recommended)**
+
+```bash
+python -m venv venv
+.\venv\Scripts\activate        # Windows PowerShell
+# OR
+source venv/bin/activate       # macOS/Linux
+
+**b. Install required dependencies**
+
+```bash
+pip install -r requirements.txt
+
+**📓 Launch Jupyter Notebook**
+```bash
+jupyter notebook
+
+This will open Jupyter in your browser. Now:
+
+Open data_fetch.ipynb
+➤ Run this notebook to collect track metadata and audio features using the Spotify API.
+
+Open EDA.ipynb
+➤ Run this notebook to explore the dataset, visualize patterns, and perform regression analysis.
