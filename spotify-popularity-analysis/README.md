@@ -55,29 +55,33 @@ Follow these steps to set up and run the project locally using Jupyter Notebook.
 ```bash
 git clone https://github.com/ManiShankar6/Projects.git
 cd projects/spotify-popularity-analysis
+```
 
 ### 🛠️ Set Up the Environment
-**a. Create a virtual environment (recommended)**
+**a. Create a Virtual Environment (Recommended)**
 
 ```bash
 python -m venv venv
 .\venv\Scripts\activate        # Windows PowerShell
 # OR
 source venv/bin/activate       # macOS/Linux
+```
 
-**b. Install required dependencies**
+**b. Install Required Dependencies**
 
 ```bash
 pip install -r requirements.txt
+```
 
 **📓 Launch Jupyter Notebook**
 ```bash
 jupyter notebook
+```
 
 This will open Jupyter in your browser. Now:
 
-Open data_fetch.ipynb
-➤ Run this notebook to collect track metadata and audio features using the Spotify API.
+- Open **`data_fetch.ipynb`**  
+  ➤ Run this notebook to collect track metadata and audio features using the Spotify API.
 
-Open EDA.ipynb
-➤ Run this notebook to explore the dataset, visualize patterns, and perform regression analysis.
+- Open **`EDA.ipynb`**  
+  ➤ Run this notebook to explore the dataset, visualize patterns, and perform regression analysis.
