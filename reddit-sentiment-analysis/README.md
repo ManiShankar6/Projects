@@ -4,6 +4,7 @@
 This project extracts Reddit posts from specified subreddits, performs sentiment analysis using NLTK's VADER, and ingests data into a PostgreSQL database. The pipeline is designed to run automatically once certain data thresholds (50,000 records) are met, ensuring we only process and ingest significant batches of data.
 
 ## Project Structure
+```bash
 reddit-sentiment-analysis/
 ├── analysis/
 │   ├── sentiment_analysis.py      # Script for performing sentiment analysis on extracted data
@@ -25,7 +26,7 @@ reddit-sentiment-analysis/
 ├── etl_pipeline.py                # Main pipeline script orchestrating extraction → analysis → ingestion
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation and usage instructions
-
+```
 
 
 ## Prerequisites

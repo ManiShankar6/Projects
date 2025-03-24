@@ -45,6 +45,18 @@ A machine learning and GUI-based project to predict **Parkinson's disease** usin
 
 ---
 
+### 🔎 [Reddit Sentiment Analysis Using Python & PostgreSQL](./reddit-sentiment-analysis)
+
+An end-to-end data engineering and analytics project that extracts Reddit posts using the **Reddit API**, performs **VADER sentiment analysis** (NLTK), and ingests the results into **PostgreSQL** for real-time dashboards.
+
+- **Tech Stack:** Python, PRAW (Reddit API), NLTK (VADER), PostgreSQL, Tableau/Power BI
+- **Focus Areas:** ETL, Scheduling (cron/Azure), CI/CD, Sentiment Analysis, Data Visualization
+- **Dataset:** 50,000+ Reddit posts from chosen subreddits
+
+📄 [Project ReadMe](./reddit-sentiment-analysis/README.md)
+
+---
+
 ## 📁 Repo Structure
 ```bash
 Projects:.
@@ -52,11 +64,23 @@ Projects:.
 │   ├───data
 │   ├───images
 │   └───notebooks
-├───Parkinson's-disease-prediction
+├───parkinsons-disease-prediction
 │   ├───assets
 │   ├───data
 │   ├───notebooks
 │   └───src
+├───reddit-sentiment-analysis
+│   ├───analysis
+│   ├───config
+│   │   └───__pycache__
+│   ├───data
+│   │   ├───processed
+│   │   └───raw
+│   ├───db
+│   │   └───migrations
+│   ├───etl
+│   └───visualization
+│       └───dashboard_setup
 └───spotify-popularity-analysis
 ```
 
