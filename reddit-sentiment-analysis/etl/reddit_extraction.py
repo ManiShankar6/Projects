@@ -5,25 +5,29 @@ import datetime
 import pandas as pd
 import praw
 
-
 # Ensure the project root is in the Python path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from config.config import CLIENT_ID, CLIENT_SECRET, USER_AGENT, USERNAME, PASSWORD
+# Import the new config loading functions
+from config.config import load_config, get_reddit_credentials
 
 def extract_100_posts(subreddit_name="news", limit=100):
     """
     Connects to Reddit using PRAW and extracts 100 posts from the specified subreddit.
     Returns a list of dictionaries with post details.
     """
+    # Load config and retrieve Reddit credentials
+    cfg = load_config()  # Raises FileNotFoundError if config.ini is missing
+    creds = get_reddit_credentials(cfg)
+
     reddit = praw.Reddit(
-        client_id=CLIENT_ID,
-        client_secret=CLIENT_SECRET,
-        user_agent=USER_AGENT,
-        username=USERNAME,
-        password=PASSWORD
+        client_id=creds['client_id'],
+        client_secret=creds['client_secret'],
+        user_agent=creds['user_agent'],
+        username=creds['username'],
+        password=creds['password']
     )
     
     subreddit = reddit.subreddit(subreddit_name)
