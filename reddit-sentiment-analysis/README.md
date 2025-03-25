@@ -20,8 +20,7 @@ reddit-sentiment-analysis/
 │   ├── conditional_ingest.py      # Script to ingest data into PostgreSQL only after a threshold is reached
 ├── etl/
 │   ├── reddit_extraction.py       # Script for extracting Reddit data (e.g., using PRAW)
-├── visualization/
-│   ├── dashboard_setup/           # Folder for Tableau/Power BI setup or other dashboard configurations
+├── visualization/                 # Dashboards visualizations
 ├── project-setup.ps1              # PowerShell script to create folder structure
 ├── etl_pipeline.py                # Main pipeline script orchestrating extraction → analysis → ingestion
 ├── requirements.txt               # Python dependencies

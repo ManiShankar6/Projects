@@ -9,7 +9,9 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from config.config import load_config, get_postgres_credentials
+from config.config import DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME
+
+DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
 def create_tables(engine):
     """
@@ -53,15 +55,6 @@ def ingest_data(csv_file="data/processed/live_data_with_sentiment.csv"):
 
     if total_records >= 50000:
         print("Threshold reached (50,000 records). Updating the database...")
-
-        # Load PostgreSQL credentials from config.ini
-        cfg = load_config()
-        pg_creds = get_postgres_credentials(cfg)
-        DATABASE_URL = (
-            f"postgresql://{pg_creds['db_user']}:{pg_creds['db_password']}"
-            f"@{pg_creds['db_host']}:{pg_creds['db_port']}/{pg_creds['db_name']}"
-        )
-
         engine = create_engine(DATABASE_URL)
         create_tables(engine)  # Ensure table exists
         try:
